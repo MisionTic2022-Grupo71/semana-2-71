@@ -61,10 +61,10 @@
         </span>
       </div>
 
-      <div class="card-deck">
-        <div class="card col-4" v-for="(nmiembro, index) of  team" :key="index">
+      <div class="card-deck mr-2 ml-2">
+        <div class="card ml-auto mr-auto w-100" style="width:100%" v-for="(nmiembro, index) of  team" :key="index">
           <team-card 
-          v-bind:miembro="nmiembro">
+          v-bind:member="nmiembro">
             
           </team-card>
         </div>

@@ -1,20 +1,20 @@
 <template>
         <div>
           <div>
-              <img v-bind:src="miembro.image" class="card-img-top rounded-circle" alt="">
+              <img v-bind:src="member.image" class="card-img-top rounded-circle" alt="">
           </div>  
           <div class="card-body text-justify text-center">
             <h4>
-              {{"Miembro: "+miembro.codigo}}
+              {{"Miembro: "+member.codigo}}
             </h4>
             <h4>
-              {{"Rol: "+miembro.rol}}
+              {{"Rol: "+member.rol}}
             </h4>
             <h4 class="p-3">
-              {{miembro.nombre}}
+              {{member.nombre}}
             </h4>
             <h5>
-              {{miembro.descripcion}}
+              {{member.descripcion}}
             </h5>
           </div>
         </div>
@@ -25,7 +25,7 @@
     export default {
         name: "TeamCard",
         //props: ['miembro', 'rol', 'nombre', 'texto', 'url']
-        props:['miembro']
+        props:['member']
             
     }
 </script>
